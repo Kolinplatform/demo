@@ -32,12 +32,12 @@
     }).catch((error) => {
         //processing the error
 		
-    })
-				  x.preventDefault();}
+    }) 
+				}
 //Sign transference with Waveskeeper
+var WavesAddress = document.getElementById("WavesAddress").value;
+var Amount = document.getElementById("Amount").value;
 function sendkolin(){
-	var WavesAddress = document.getElementById("WavesAddress").value;
-	var Amount = document.getElementById("Amount").value;
 	const txData = {
            type: 4,
            data: {
@@ -56,6 +56,7 @@ function sendkolin(){
            //data - a line ready for sending to Waves network's node (server)
        }).catch((error) => { 
            //processing errors
+		    console.error("Something went wrong", error);
        });}
 
 //Lease Kolin
@@ -72,17 +73,16 @@ function lease(){WavesKeeper.signTransaction({
              }
         }
    }).then((tx) => {
-        console.log("Hurray! I've been able to lease Kolin!!");
+        console.log("You've leased Kolin!");
    }).catch((error) => {
-        console.error("Something went wrong", error);
+        console.error("This feature isn't still avaialble", error);
    });}
 
 //buykolin
-var btotal = document.getElementById("btotal").value;
-var bprice = document.getElementById("bprice").value;
-var bamount = document.getElementById("bamount").value;
+var btotal = parseInt(document.getElementById("btotal").value);
+var bprice = parseInt(document.getElementById("bprice").value);
+var bamount = parseInt(document.getElementById("bamount").value);
 function buybtckolin(){WavesKeeper.signOrder({
-	
         type: 1002,
         data: {
              matcherPublicKey: "7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy",
@@ -142,7 +142,7 @@ function cancelorder(){WavesKeeper.signAndPublishCancelOrder({
             id: '31EeVpTAronk95TjCHdyaveDukde4nDr9BfFpvhZ3Sap'
         }
     }).then(() => {
-        console.log("Hurray! I've cancelled an order");
+        console.log("Order cancelled");
     }).catch((error) => {
         console.error("Something went wrong", error);
     });}
@@ -158,7 +158,7 @@ function cancelorder(){WavesKeeper.signAndPublishCancelOrder({
              }
         }
    }).then((tx) => {
-        console.log("Hurray! Now I have an alias!!!");
+        console.log("Your new alias has been created");
    }).catch((error) => {
         console.error("Something went wrong", error);
    });}

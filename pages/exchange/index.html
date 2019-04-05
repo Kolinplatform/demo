@@ -376,7 +376,7 @@
 		<div class="tab-content" id="myTabContent2">
             <div class="tab-pane fade show active" id="limit" role="tabpanel" aria-labelledby="limit-tab">
             	<div class="row">
-                	<div class="col-md-6 col-sm-6 col-xs-12" oninput="btotal.value=(bprice.value)*parseInt(bamount.value)">
+                	<div class="col-md-6 col-sm-6 col-xs-12" oninput="btotal.value=parseInt(bprice.value)*parseInt(bamount.value)">
                     	<h6 class="title"><strong>Buy KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                         <div class="form-group">
                         	<label for="">Price</label>
@@ -393,18 +393,18 @@
                              <a href="#">100%</a>
                         </div>
                         <div class="form-group">
-                             <label for="amount price">Total</label>
-                             <input type="text" class="form-control" min="0.00000001" step="0.00000001" id="btotal" name="total" placeholder="BTC">
+                             <label for="bamount bprice">Total</label>
+                             <input type="text" class="form-control" min="0.00000001" step="0.00000001" id="btotal" name="btotal" placeholder="BTC">
                         </div>
                         <div class="form-group">
                              <a class="btn btn-success" onClick="buybtckolin()">BUY</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12" oninput="(stotal.value)=(sprice.value)*(samount.value)">
+                    <div class="col-md-6 col-sm-6 col-xs-12" oninput="(stotal.value)=parseInt(sprice.value)*(samount.value)">
                         <h6 class="title"><strong>Sell KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                         <div class="form-group">
                               <label for="">Price</label>
-                              <input type="number" min="0.00000001" value="0.00000001" step="0.00000001" class="form-control" id="sprice"  placeholder="BTC">
+                              <input type="text" min="0.00000001" value="0.00000001" step="0.00000001" class="form-control" id="sprice"  placeholder="BTC">
                         </div>
                         <div class="form-group">
                                             <label for="">Amount</label>
@@ -418,25 +418,25 @@
                         </div>
                         <div class="form-group">
                                             <label for="samount sprice">Total</label>
-                                            <input type="text" class="form-control" id="stotal" placeholder="BTC">
+                                            <input type="text" class="form-control" id="stotal" min="0.00000001" placeholder="BTC">
                         </div>
                         <div class="form-group">
-                                            <a class="btn btn-danger" onClick="sellbtckolin()">SELL</a>
+                        	<a class="btn btn-danger" onClick="sellbtckolin()">SELL</a>
                         </div>
                    </div>
               </div>
           </div>
                             <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-6 col-sm-6 col-xs-12" oninput="(bmtotal.value)=parseInt(bmprice.value)*(bmamount.value)">
                                         <h6 class="title"><strong>Buy KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                                         <div class="form-group">
                                             <label for="">Price</label>
-                                            <input type="number" min="0.00000001" step="0.00000001" class="form-control" id="" placeholder="BTC">
+                                            <input type="text" min="0.00000001" step="0.00000001" value="0.00000001" class="form-control" id="bmprice" placeholder="BTC">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Amount</label>
-                                            <input type="number"  min="100" value="100" step="1"  class="form-control" id="" placeholder="KOLIN">
+                                            <input type="number"  min="100" value="100" step="1"  class="form-control" id="bmamount" placeholder="KOLIN">
                                         </div>
                                         <div class="form-group percent-btns">
                                             <a href="#">25%</a>
@@ -445,22 +445,22 @@
                                             <a href="#">100%</a>
                                         </div>
 										<div class="form-group">
-                          				   <label for="">Total</label>
-                        				   <input type="number" class="form-control" id="" placeholder="BTC">
+                          				   <label for="bmprice bmamount">Total</label>
+                        				   <input type="text" class="form-control" id="bmtotal" placeholder="BTC">
                        					</div>
                                         <div class="form-group">
                                             <a class="btn btn-success" onClick="buybtckolin()">BUY</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-6 col-sm-6 col-xs-12" oninput="(smtotal.value)=parseInt(smprice.value)*(smamount.value)">
                                         <h6 class="title"><strong>Sell KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                                         <div class="form-group">
                                             <label for="">Price</label>
-                                            <input type="number" min="0.00000001" step="0.00000001" class="form-control" id="" placeholder="BTC">
+                                            <input type="text" min="0.00000001" step="0.00000001" value="0.00000001" class="form-control" id="smprice" placeholder="BTC">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Amount</label>
-                                            <input type="number"  min="100" value="100" step="1" class="form-control" id="" placeholder="KOLIN">
+                                            <input type="number"  min="100" value="100" step="1" class="form-control" id="smamount" placeholder="KOLIN">
                                         </div>
                                         <div class="form-group percent-btns">
                                             <a href="#">25%</a>
@@ -470,7 +470,7 @@
                                         </div>
 										<div class="form-group">
                             			 	<label for="">Total</label>
-                            				<input type="text" class="form-control" id="" placeholder="BTC">
+                            				<input type="text" class="form-control" id="smtotal" placeholder="BTC">
                        					</div>
                                         <div class="form-group">
                                             <a class="btn btn-danger" onClick="sellbtckolin()">SELL</a>
@@ -552,7 +552,7 @@
                            
     </ul>
 <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade" id="buy">
+                            <div class="tab-pane fade show active" id="buy">
 								<div class="table table-responsive">
                                 <table class="table">
                                     <thead>
@@ -614,8 +614,8 @@
 															
                                                         </div>
                                                     </td>
-                                                    <td><span class="text-success">0.00000002</span> </td>
-                                                    <td><span class="text-success">+10.0%</span></td>
+                                                    <td><span class="text-success" id="lastprice"></span> </td>
+                                                    <td><span class="text-success">+100.0%</span></td>
                                                 </tr> 
                                             <!--    <tr class="clickable-row" data-href="">
                                                     <td>
