@@ -16,7 +16,11 @@
 //Import MarketData from matcher
 $(document).ready(function(){
 $.getJSON("https://api.wavesplatform.com/v0/pairs/FiKspxSpkpzT4pMUA9ccZkbJmVXTdu4JhFDXNNXr5noW/8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS?t=", function(result){
-$(lastprice).append((result.lastPrice)/100000000000000);
+$(lastprice).append((result.data.lastPrice).toFixed(8).replace(/\.?0+$/,"") + " BTC");
+$(volumeprice).append((result.data.quoteVolume).toFixed(8).replace(/\.?0+$/,"") + " BTC");
+$(volumekolinprice).append((result.data.volume).toFixed(8).replace(/\.?0+$/,"") + " KOLIN");
+$(highprice).append((result.data.high).toFixed(8).replace(/\.?0+$/,"") + " BTC");
+$(lowprice).append((result.data.low).toFixed(8).replace(/\.?0+$/,"") + " BTC");
 });	  
 });
 

@@ -1,6 +1,6 @@
 new TradingView.widget({
     "autosize": true,
-    "symbol": "Bitmex:XBTUSD",
+    "symbol": "Bittrex:BTCUSD",
     "interval": "D",
     "timezone": "Etc/UTC",
     "theme": "light",

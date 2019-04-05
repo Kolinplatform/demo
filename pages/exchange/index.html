@@ -329,23 +329,24 @@
                     </div>
                     <div class="head-splits">
                         <p class="small primary"><strong>Last Price</strong></p>
-                        <p id="lastprice"> $0.05</p>
+                        <p id="lastprice"> </p>
                     </div>
-                    <div class="head-splits">
-                        <p class="small primary"><strong>24h change</strong></p>
-                        <p class="amount"><span class="text-black">+0.00000002</span> +100%</p>
-                    </div>
+                    
                     <div class="head-splits">
                         <p class="small primary"><strong>24h High</strong></p>
-                        <p class="amount"><span class="text-black">0.00000010</span> BTC</p>
+                        <p class="amount" id="highprice"></p>
                     </div>
                     <div class="head-splits">
                         <p class="small primary"><strong>24h Low</strong></p>
-                        <p class="amount"><span class="text-black">0.00000001</span> BTC</p>
+                        <p class="amount" id="lowprice"></p>
                     </div>
                     <div class="head-splits">
                         <p class="small primary"><strong>24h Volume</strong></p>
-                        <p class="amount"><span class="text-black">1.4287</span> BTC</p>
+                        <p class="amount" id="volumeprice"></p>
+                    </div>
+					<div class="head-splits">
+                        <p class="small primary"><strong>24h volume</strong></p>
+                        <p class="amount" id="volumekolinprice"></p>
                     </div>
 	</div></div></div></div>
 <!-- TradingView Widget BEGIN -->
@@ -379,7 +380,7 @@
                     	<h6 class="title"><strong>Buy KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                         <div class="form-group">
                         	<label for="">Price</label>
-                            <input type="number" min="0.00000001" value="0.00000001" step="0.00000001" class="form-control" id="bprice" placeholder="BTC">
+                            <input type="text" min="0.00000001" value="0.00000001" step="0.00000001" class="form-control" id="bprice" placeholder="BTC">
                         </div>
                         <div class="form-group">
                             <label for="">Amount</label>
@@ -431,11 +432,11 @@
                                         <h6 class="title"><strong>Buy KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                                         <div class="form-group">
                                             <label for="">Price</label>
-                                            <input type="text" class="form-control" id="" placeholder="BTC">
+                                            <input type="number" min="0.00000001" step="0.00000001" class="form-control" id="" placeholder="BTC">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Amount</label>
-                                            <input type="text" class="form-control" id="" placeholder="KOLIN">
+                                            <input type="number"  min="100" value="100" step="1"  class="form-control" id="" placeholder="KOLIN">
                                         </div>
                                         <div class="form-group percent-btns">
                                             <a href="#">25%</a>
@@ -445,7 +446,7 @@
                                         </div>
 										<div class="form-group">
                           				   <label for="">Total</label>
-                        				   <input type="text" class="form-control" id="" placeholder="BTC">
+                        				   <input type="number" class="form-control" id="" placeholder="BTC">
                        					</div>
                                         <div class="form-group">
                                             <a class="btn btn-success" onClick="buybtckolin()">BUY</a>
@@ -455,11 +456,11 @@
                                         <h6 class="title"><strong>Sell KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
                                         <div class="form-group">
                                             <label for="">Price</label>
-                                            <input type="text" class="form-control" id="" placeholder="BTC">
+                                            <input type="number" min="0.00000001" step="0.00000001" class="form-control" id="" placeholder="BTC">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Amount</label>
-                                            <input type="text" class="form-control" id="" placeholder="KOLIN">
+                                            <input type="number"  min="100" value="100" step="1" class="form-control" id="" placeholder="KOLIN">
                                         </div>
                                         <div class="form-group percent-btns">
                                             <a href="#">25%</a>
