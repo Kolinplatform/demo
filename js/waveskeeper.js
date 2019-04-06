@@ -35,10 +35,11 @@
     }) 
 				}
 //Sign transference with Waveskeeper
-var WavesAddress = document.getElementById("WavesAddress").value;
-var Amount = document.getElementById("Amount").value;
+
 function sendkolin(){
-	const txData = {
+	var WavesAddress = document.getElementById("RecipientWavesAddress").value;
+var Amount = document.getElementById("Amount").value;
+	WavesKeeper.signTransaction({
            type: 4,
            data: {
                amount: {
@@ -51,8 +52,7 @@ function sendkolin(){
                },
                recipient: WavesAddress,
            }
-       };
-       WavesKeeper.signAndPublishTransaction(txData).then((data) => {
+       }).then((data) => {
            //data - a line ready for sending to Waves network's node (server)
        }).catch((error) => { 
            //processing errors
@@ -64,7 +64,7 @@ function sendkolin(){
 function lease(){WavesKeeper.signTransaction({
         type: 8,
         data: {
-             "amount": 100000,
+             "amount": 1000000,
 			"assetId": "FiKspxSpkpzT4pMUA9ccZkbJmVXTdu4JhFDXNNXr5noW",
              "recipient": "3PGsboZa7nvTMcAhL8jzPtrXGjsgU8yKWeQ",
              fee: {
@@ -79,10 +79,13 @@ function lease(){WavesKeeper.signTransaction({
    });}
 
 //buykolin
-var btotal = parseInt(document.getElementById("btotal").value);
-var bprice = parseInt(document.getElementById("bprice").value);
-var bamount = parseInt(document.getElementById("bamount").value);
-function buybtckolin(){WavesKeeper.signOrder({
+
+function buybtckolin(){
+	var btotal = document.getElementById("btotal").value;
+var bprice = document.getElementById("bprice").value;
+var bamount = document.getElementById("bamount").value;
+	WavesKeeper.signOrder({
+	
         type: 1002,
         data: {
              matcherPublicKey: "7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy",
@@ -102,16 +105,18 @@ function buybtckolin(){WavesKeeper.signOrder({
              }
         }
    }).then((tx) => {
-        console.log("Hurray! I've signed an order!!!");
+        console.log("Order submited");
    }).catch((error) => {
         console.error("Something went wrong", error);
    });}
 
 //sellkolin
-var stotal = document.getElementById("stotal").value;
+
+function sellbtckolin(){
+	var stotal = document.getElementById("stotal").value;
 var sprice = document.getElementById("sprice").value;
 var samount = document.getElementById("samount").value;
-function sellbtckolin(){WavesKeeper.signOrder({
+	WavesKeeper.signOrder({
         type: 1002,
         data: {
              matcherPublicKey: "7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy",
@@ -131,7 +136,7 @@ function sellbtckolin(){WavesKeeper.signOrder({
              }
         }
    }).then((tx) => {
-        console.log("Hurray! I've signed an order!!!");
+        console.log("Order submited");
    }).catch((error) => {
         console.error("Something went wrong", error);
    });}
