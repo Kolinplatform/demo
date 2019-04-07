@@ -62,9 +62,13 @@ $('#search').keyup(function() {
 
   $(document).ready(function(){
     $.getJSON("https://api.wavesplatform.com/v0/transactions/transfer?assetId=FiKspxSpkpzT4pMUA9ccZkbJmVXTdu4JhFDXNNXr5noW&limit=10?t=", function(result){
-      $.each(result.data, function(key, value){
+      $.each(result.data, function(key, value){	
 		  
-        $("tbody").append("<tr>"+ "<td class='searchable'>" + (value.data.timestamp).replace('T',' ').substr(0, 19) + "</td>"  + "</td>" + "<td class='searchable'>" + value.data.type + "</td>"  + "<td class='searchable'>" + value.data.sender + "</td>" + "<td class='searchable'>" + value.data.recipient + "</td>" + "<td>" + (value.data.amount).toLocaleString() + "</td>"+"</tr>");
+		// var exchanges = ["3PFXeQH2e9P2tJmK66gYW19MPZgD7E3pLdt":"Crex24", "3PNbhapE5NpBcZjrTa3KrLpFKfShfwYunWB":"STEX", "3PDbG6qSXR39o4qcr9oNwkb3vxfk6XvcHKp":"Cryptonex", "3P8M48UR7eL29iLkheqAfcJwLv1KpEHXSLn":"Bleutrade", "Kompler: "","":""];
+        $("tbody").append("<tr>"+ "<td class='searchable'>" + (value.data.timestamp).replace('T',' ').substr(0, 19) + "</td>"  + "</td>" + "<td class='searchable'>" + value.data.type + "</td>"  + "<td class='searchable'>" + value.data.sender + "</td>" + "<td class='searchable'>" + value.data.recipient + "</td>" + "<td>" + (value.data.amount).toLocaleString() + "</td>"+"</tr>");//value.data.recipient
+		  
+
+		 
     });
   });		  
 });

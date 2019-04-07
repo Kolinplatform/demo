@@ -28,9 +28,8 @@ $(lowprice).append((result.data.low).toFixed(8).replace(/\.?0+$/,"") + " BTC");
 $(document).ready(function(){
     $.getJSON("https://api.wavesplatform.com/v0/transactions/exchange?amountAsset=FiKspxSpkpzT4pMUA9ccZkbJmVXTdu4JhFDXNNXr5noW&priceAsset=8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS&sort=desc&limit=10&t=", function(result){
       $.each(result.data, function(key, value){
-		  //if(value.data.orderType === "buy"){"<tr><td class="text-success">";}else{"<tr><td class="text-danger">";}
-		  var x = value.data.orderType
-		  if(x = "buy"){y = "text-success"}else{y = "text-danger"}
+
+		  if(value.data.orderType = "buy"){y = "text-success"}else if(x= "sell"){y = "text-danger"} //Not currently working as type order must be checked in another way
         $(lastTransactions).append(//"<tr><td>" 
 			
 			"<tr><td class=" + y + ">" + ((value.data.price)).toFixed(8).replace(/\.?0+$/,"")+ "</td><td>" + (value.data.amount).toLocaleString() + "</td><td>" + (((value.data.price))*(value.data.amount)).toFixed(8).replace(/\.?0+$/,"")+"</td></tr>");

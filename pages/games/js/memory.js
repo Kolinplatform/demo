@@ -118,62 +118,62 @@
 	var mcards = [
 		{
 			name: "dutch",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/netherlands/netherlands_640.png",
+			img: " ../../images/flags/netherlands_640.png",
 			id: 1,
 		},
 		{
 			name: "german",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/germany/germany_640.png",
+			img: " ../../images/flags/germany_640.png",
 			id: 2
 		},
 		{
 			name: "portuguese",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/portugal/portugal_640.png",
+			img: " ../../images/flags/portugal_640.png",
 			id: 3
 		},
 		{
 			name: "french",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/france/france_640.png",
+			img: " ../../images/flags/france_640.png",
 			id: 4
 		}, 
 		{
 			name: "italian",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/italy/italy_640.png",
+			img: " ../../images/flags/italy_640.png",
 			id: 5
 		},
 		{
 			name: "indian",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/india/india_640.png",
+			img: " ../../images/flags/india_640.png",
 			id: 6
 		},
 		{
 			name: "japanesse",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/japan/japan_640.png",
+			img: " ../../images/flags/japan_640.png",
 			id: 7
 		},
 		{
 			name: "russian",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/russia/russia_640.png",
+			img: " ../../images/flags/russia_640.png",
 			id: 8
 		},
 		{
 			name: "korean",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/korea_south/korea_south_640.png",
+			img: " ../../images/flags/korea_south_640.png",
 			id: 9
 		},
 		{
 			name: "english",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/united_kingdom/united_kingdom_640.png",
+			img: " ../../images/flags/united_kingdom_640.png",
 			id: 10
 		},
 		{
 			name: "spanish",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/spain/spain_640.png",
+			img: " ../../images/flags/spain_640.png",
 			id: 11
 		},
 		{
 			name: "chinese",
-			img: "http://img.freeflagicons.com/thumb/speech_bubble_icon/china/china_640.png",
+			img: " ../../images/flags/china_640.png",
 			id: 12
 		},
 	];

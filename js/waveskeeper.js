@@ -60,6 +60,7 @@ var Amount = document.getElementById("Amount").value;
        });}
 
 //Lease Kolin
+//not activated in mainnet
 
 function lease(){WavesKeeper.signTransaction({
         type: 8,
