@@ -392,14 +392,16 @@
                   <div class="form-group">
                           <div class="input-group">
                             <div class="input-group-prepend bg-primary border-primary">
-                              <span class="input-group-text bg-transparent text-white">$</span>
+                              <span class="input-group-text bg-transparent text-white"><svg width="16" height="16"><path transform="scale(0.1)" d="M45,52.3a3,3,0,0,0,4.93,2.29L96.8,15.24a4,4,0,0,0-.52-6.49A64,64,0,0,0,51.53,1.22,8,8,0,0,0,45,9.08Z" fill="#fff"></path><path transform="scale(0.1)" fill="#fff" d="M104.51,108.8a4,4,0,0,0,5.43-.25,64,64,0,0,0,0-89.1,4,4,0,0,0-5.43-.25L54.9,60.94a4,4,0,0,0,0,6.12Z" ></path><path fill="#fff" transform="scale(0.1)" d="M37,12.64a4,4,0,0,0-6.08-3.42,64,64,0,0,0,0,109.56A4,4,0,0,0,37,115.36Z" ></path><path fill="#fff" transform="scale(0.1)" d="M45,75.7v43.22a8,8,0,0,0,6.53,7.86,64,64,0,0,0,44.75-7.53,4,4,0,0,0,.52-6.49L49.93,73.41A3,3,0,0,0,45,75.7Z"></path></svg></span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input type="text" class="form-control" id="bamount">
+							  
                             <div class="input-group-append bg-primary border-primary">
                               <span class="input-group-text bg-transparent text-white">.00</span>
 								
                             </div>
-							  <button type="submit" class="btn btn-primary" onclick="buykolin()">Buy</button>
+							  <input class="hidden d-none" value="0.0001" id="bprice">
+							  <button type="submit" class="btn btn-primary" onclick="buybtckolin()">Buy</button>
                           </div>
                         </div>
                 </div>
