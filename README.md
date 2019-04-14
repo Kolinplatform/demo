@@ -9,5 +9,6 @@ Last updates
 
 | Version  | Date | Comments
 | ------------- | ------------- | ------------- |
-| V.0.1  | 04/04/2019  | First version release; SignTransactions() rather than SignandPublishTransacion() for protecting user's funds |
+| V.0.1.1  | 14/04/2019  | First version release update; SignandPublishTransacion() activated |
+| V.0.1.0  | 04/04/2019  | First version release; SignTransactions() rather than SignandPublishTransacion() for protecting user's funds |
 
