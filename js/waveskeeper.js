@@ -39,7 +39,7 @@
 function sendkolin(){
 	var WavesAddress = document.getElementById("RecipientWavesAddress").value;
 var Amount = document.getElementById("Amount").value;
-	WavesKeeper.signTransaction({
+	WavesKeeper.signAndPublishTransaction({
            type: 4,
            data: {
                amount: {
@@ -62,7 +62,7 @@ var Amount = document.getElementById("Amount").value;
 //Lease Kolin
 //not activated in mainnet
 
-function lease(){WavesKeeper.signTransaction({
+function lease(){WavesKeeper.signAndPublishTransaction({
         type: 8,
         data: {
              "amount": 1000000,
@@ -82,10 +82,10 @@ function lease(){WavesKeeper.signTransaction({
 //buykolin
 
 function buybtckolin(){
-	var btotal = document.getElementById("btotal").value;
+	
 var bprice = document.getElementById("bprice").value;
 var bamount = document.getElementById("bamount").value;
-	WavesKeeper.signOrder({
+	WavesKeeper.signAndPublishOrder({
 	
         type: 1002,
         data: {
@@ -114,10 +114,10 @@ var bamount = document.getElementById("bamount").value;
 //sellkolin
 
 function sellbtckolin(){
-	var stotal = document.getElementById("stotal").value;
+	
 var sprice = document.getElementById("sprice").value;
 var samount = document.getElementById("samount").value;
-	WavesKeeper.signOrder({
+	WavesKeeper.signAndPublishOrder({
         type: 1002,
         data: {
              matcherPublicKey: "7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy",
