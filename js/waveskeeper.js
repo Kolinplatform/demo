@@ -80,11 +80,11 @@ function lease(){WavesKeeper.signAndPublishTransaction({
    });}
 
 //buykolin
-
-function buybtckolin(){
-	
 var bprice = document.getElementById("bprice").value;
 var bamount = document.getElementById("bamount").value;
+function buybtckolin(){
+	
+
 	WavesKeeper.signAndPublishOrder({
 	
         type: 1002,
@@ -112,11 +112,12 @@ var bamount = document.getElementById("bamount").value;
    });}
 
 //sellkolin
+var sprice = document.getElementById("sprice").value;
+var samount = document.getElementById("samount").value;
 
 function sellbtckolin(){
 	
-var sprice = document.getElementById("sprice").value;
-var samount = document.getElementById("samount").value;
+
 	WavesKeeper.signAndPublishOrder({
         type: 1002,
         data: {
