@@ -34,9 +34,6 @@
       $(this).addClass("selected");
     });
       
-    
-
-
     //Navbar Backgrounds
     $(".tiles.primary").on("click", function() {
       $(".navbar").removeClass(navbar_classes);
