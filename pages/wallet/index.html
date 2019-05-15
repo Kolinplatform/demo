@@ -41,10 +41,7 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
-
-
 </head>
-
 <body>
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
@@ -324,7 +321,6 @@ window.cookieconsent.initialise({
           </li>
         </ul>
       </nav>
-
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
@@ -359,16 +355,14 @@ function makeCode () {
 	var elText = document.getElementById("WavesAddress");
 	
 	if (!elText.value) {
-		alert("Input a text");
+		alert("Add a Waves address");
 		elText.focus();
 		return;
 	}
 	
 	qrcode.makeCode(elText.value);
 }
-
 makeCode();
-
 $("#WavesAddress").
 	on("blur", function () {
 		makeCode();
@@ -397,7 +391,7 @@ document.getElementById("percentageholder").innerHTML = ((obj.balance/3000000000
 }				
 						</script>
 					</div>
-						<div class="col-md-4 pt-2">
+						<div class="col-md-8 pt-2">
 					<h4 class="d-flex align-items-end pt-xl-5">Total Balance</h4>
 					<h2 class="d-flex mt-lg-4" id="kolinbalance"></h2>
 					<p class="text-muted mt-3 mb-0"> <em class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></em> holds <strong id="percentageholder">0</strong> % supply </p>
@@ -410,7 +404,7 @@ document.getElementById("percentageholder").innerHTML = ((obj.balance/3000000000
 					
 						<!--	<div class="col-md-12"><svg class="pl-4"><path transform="scale(0.4)" fill="blue" d="M128,64,64,128,0,64,64,0Z"></path></svg></div>-->
 					
-						</div>
+						    </div>
                 </div>
               </div>
             </div>
