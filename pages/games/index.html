@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -14,8 +13,6 @@
 	<link rel="stylesheet" href="css/memory.css">
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
 	<!--<link rel="stylesheet" href="css/reset.min.css"> -->
-
-	
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
@@ -331,11 +328,17 @@
               </div>
             </div>
             <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card" style="background: #000">
+           
+               <div class="card" style="background: #000">
                 <div class="card-body">
                   <h4 class="card-title text-white">Pacman</h4>
-                  <div id="pacman"></div>
-					
+                  <span id="replacepacman"><a href="#" class="parpadea"  onclick="replace()">Insert Kolin</a></span>
+                  <script>
+                    function replace(){
+                      document.getElementById("replacepacman").innerHTML = '<div id="pacman"></div>';
+                    }
+                  </script>
+                 
 				  </div>
 				  <p class="px-4 text-white">&copy; Dale Harvey </p>
               </div>

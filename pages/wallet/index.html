@@ -337,13 +337,13 @@ window.cookieconsent.initialise({
           <div class="row">
            <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
-                <div class="card-body">
+                <div class="card-body ">
 					<h4 class="card-title">Balance</h4>
-					<input id="WavesAddress" type="text" value="3PGsboZa7nvTMcAhL8jzPtrXGjsgU8yKWeQ" style="width:90%" onChange="getbalance()"/>
+					<input id="WavesAddress" type="text" value="add your Waves address" style="width:90%" onChange="getbalance()"/>
 					<div class="row">
                   				
 					<div class="col-md-4 pt-5">
-					  <div id="qrcode" class="pl-5 py-4"></div>
+					  <div id="qrcode" class="pl-5 py-4 zoom"></div>
 
 <script src="../../js/qrcode.min.js"></script>
 
@@ -393,13 +393,13 @@ document.getElementById("percentageholder").innerHTML = ((obj.balance/3000000000
 					</div>
 						<div class="col-md-8 pt-2">
 					<h4 class="d-flex align-items-end pt-xl-5">Total Balance</h4>
-					<h2 class="d-flex mt-lg-4"><svg width="40" height="40">
+					<h2 class="d-flex mt-lg-4"><svg width="40" height="30">
               <path  transform="scale(0.25)"   d="M112.1,59.5c0,0-31.1,26.2-32.7,28.8c-1.1,1.8,32.7,28.8,32.7,28.8H96.6L62.7,88.3l35.9-28.8H112.1z"/>
               <polygon transform="scale(0.25)"  class="st0" points="80.6,67.3 61.9,83.9 61.9,67.3"/>
               <polygon transform="scale(0.25)"  class="st0" points="80.6,109.7 61.9,93.1 61.9,109.7"/>
               <path transform="scale(0.25)"   d="M102.1,30.8c-20.1,0-36.9,16-40.1,36.5c4.6-17,19.3-29.7,36.6-29.7c21.1,0,38.2,18.3,38.2,40.8
               c0,17.1-10.8,32.6-24.7,38.7c17.2-5.1,30.7-22.9,30.7-42.8C142.7,50.3,124.5,30.8,102.1,30.8z"/>
-        </svg><span  id="kolinbalance"></span></h2>
+        </svg><span id="kolinbalance">0</span></h2>
 					<p class="text-muted mt-3 mb-0"> <em class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></em> holds <strong id="percentageholder">0</strong> % supply </p>
 					</div>
 					<div class="col-md-4 pt-5"> </div>
@@ -416,8 +416,8 @@ document.getElementById("percentageholder").innerHTML = ((obj.balance/3000000000
             </div>
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Kolin stats</h4>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-title text-white">Kolin stats</h4>
                     <div class="row"><div class="col-lg-6 col-md-6 grid-margin stretch-card">
               <p id="marketCap"></p></div>
 					<div class="col-lg-6 col-md-6 grid-margin stretch-card">
