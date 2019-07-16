@@ -69,7 +69,7 @@ $('#search').keyup(function() {
 						  
 		+ "</td>"  + "<td class='searchable'>" + value.data.sender + "</td>" + "<td class='searchable'>" + value.data.recipient + "</td>" + "<td>" + (value.data.amount).toLocaleString() + "</td>"+"</tr>");
 		  $("td:contains('3PNbhapE5NpBcZjrTa3KrLpFKfShfwYunWB')").replaceWith("<td class='searchable'><label class='badge  badge-dark'>Stex</label> 3PNbhapE5NpBcZjrTa3KrLpFKfShfwYunWB</td>");
-		  $("td:contains('3PFXeQH2e9P2tJmK66gYW19MPZgD7E3pLdt')").replaceWith("<td class='searchable'><label class='badge  badge-dark'>Crex24</label> 3PFXeQH2e9P2tJmK66gYW19MPZgD7E3pLdt</td>");
+		  $("td:contains('3PBCxEbh6T77fGmDV7cpcbS8XjSnW1KZFT6')").replaceWith("<td class='searchable'><label class='badge  badge-dark'>Crex24</label> 3PFXeQH2e9P2tJmK66gYW19MPZgD7E3pLdt</td>");
  		  $("td:contains('3P8M48UR7eL29iLkheqAfcJwLv1KpEHXSLn')").replaceWith("<td class='searchable'><label class='badge  badge-dark'>Bleutrade</label> 3P8M48UR7eL29iLkheqAfcJwLv1KpEHXSLn</td>");
 		  $("td:contains('3PG3fRkBsZAhU1gfaDxKaUTV17aMkj9up24')").replaceWith("<td class='searchable'><label class='badge  badge-dark'>Swft</label> 3PG3fRkBsZAhU1gfaDxKaUTV17aMkj9up24</td>");
 		  $("td:contains('3PDbG6qSXR39o4qcr9oNwkb3vxfk6XvcHKp')").replaceWith("<td class='searchable'><label class='badge  badge-dark'>Cryptonex</label> 3PDbG6qSXR39o4qcr9oNwkb3vxfk6XvcHKp</td>");
